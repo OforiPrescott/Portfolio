@@ -36,19 +36,19 @@
     <section id="home" class="py-5">
         <div class="container text-center">
             <h2>Welcome to My Portfolio</h2>
-            <p>Hi! I'm PresHacks, a budding web developer from Ghana, passionate about creating beautiful and
-                functional websites.</p>
+            <p>Hi! I'm PresHacks, a budding web developer from Ghana, passionate about creating beautiful and functional
+                websites.</p>
             <!-- Bootstrap Carousel for Video Slider -->
             <div id="videoSlider" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <video class="d-block w-100" autoplay loop muted>
+                        <video class="d-block w-100 carousel-video" autoplay loop muted>
                             <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="carousel-item">
-                        <video class="d-block w-100" autoplay loop muted>
+                        <video class="d-block w-100 carousel-video" autoplay loop muted>
                             <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -63,7 +63,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+            <a href="#projects" class="btn btn-primary mt-4">View My Work</a>
         </div>
     </section>
 
@@ -73,10 +73,8 @@
             <h2 class="text-center mb-4">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <!-- Replace with your uploaded image -->
-                    <img src="./assets/8L6A2146.jpg" alt="PresHacks Profile Picture"
-                        class="img-fluid rounded-circle mb-3">
-                    <!-- Ensure the image is saved in the 'assets' folder -->
+                    <img src="./assets/profile.jpg" alt="PresHacks Profile Picture"
+                        class="img-fluid rounded-circle mb-3 profile-img">
                 </div>
                 <div class="col-md-8">
                     <p>I'm on a journey to master HTML, CSS, and JavaScript. Based in Ghana, I love building projects
@@ -88,6 +86,56 @@
         </div>
     </section>
 
+    <!-- Project Section with Image Cards -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card project-card h-100">
+                        <img src="./assets/hobby.jpg" class="card-img-top project-img" alt="Hobby Page">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Hobby Page</strong></h5>
+                            <p class="card-text"><em>A simple webpage showcasing my favorite hobby, built with HTML and
+                                    styled with CSS.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card h-100">
+                        <img src="./assets/skills.jpg" class="card-img-top project-img" alt="Skills Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Skills Image</strong></h5>
+                            <p class="card-text"><em>An image depicting my skills, created using HTML and styled with
+                                    Bootstrap.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card h-100">
+                        <img src="./assets/Portfolio22.jpg" class="card-img-top project-img" alt="Portfolio Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Portfolio Image</strong></h5>
+                            <p class="card-text"><em>This image depicts my portfolio page designed with HTML, CSS, and
+                                    Bootstrap, ready for JS enhancements.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section -->
+    <section id="Contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Email: <a href="mailto:preshacks@gmail.com">preshacks@gmail.com</a></p>
+            <p>Phone: +233 20 991 9060</p>
+        </div>
+    </section>
+
+    
+
+    
 </body>
 
 </html>
